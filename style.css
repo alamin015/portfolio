@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* font-family: 'Inter', sans-serif; */
+    font-family: 'Inter', sans-serif;
 }
 
 
@@ -11,14 +11,35 @@
     --body_color: #191C28;
     --Btn-BG: #D03490;
     --Btn_text_color: #fff;
+    --Black_color:#000;
+    --text_color_light_white: rgba(255, 255, 255, 0.7);
 }
 
 
 /* Common csss start here  */
+main{
+    width: 100%;
+    overflow-x: hidden;
+}
+body{
+    background: var(--body_color);
+}
+section{
+    padding: 40px 0px;
+}
 .container{
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
 }
 .btn{
     font-weight: 500;
@@ -35,3 +56,184 @@
     cursor: pointer;
 }
 /* Common csss end here  */
+
+
+/* header css code start  */
+header{
+    width: 100%;
+    padding: 26px 0px;
+    background: var(--Btn_text_color);
+}
+header nav .nav_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav_content .header_left .logo{
+    display: flex;
+    align-items: center;
+}
+.header_left .logo img{
+    width: 51px;
+    height: 45px;
+    margin-right: 8px;
+}
+.header_left .logo h3{
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--Black_color);
+}
+
+
+
+nav .header_middle ul{
+    display: flex;
+    align-items: center;
+    
+}
+nav .header_middle ul li{
+    margin-right: 45px;
+}
+nav .header_middle ul li:last-child{
+    margin-right: 0;
+}
+nav .header_middle ul li a{
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.7);
+}
+nav .header_middle ul li a.active{
+    color: var(--Black_color);
+    font-weight: 500;
+}
+nav .header_right button{
+    padding: 13px 34px;
+}
+/* header css code End */
+
+
+
+/* Home section css start here  */
+#home{
+    padding: 60px 0px;
+    position: relative;
+    height: 100vh;
+}
+#home::after{
+    content: '';
+    display: block;
+    position: absolute;
+    right: -100px;
+    top: -100px;
+    /* width: 50%;
+    height: 90%; */
+    width: 879px;
+    height: 700px;
+    background: url('./img/homeBG.png') no-repeat center center / cover;
+    z-index: -1;
+}
+#home .home_content{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.home_content .home_content_text{
+    flex: 1.4;
+}
+.home_content .home_content_img{
+    flex: 1.6;
+}
+
+.home_content_text h2,
+.know_more_content_right h2{
+    font-weight: 600;
+    font-size: 48px;
+    color: var(--Btn_text_color);
+}
+.home_content_text p,
+.know_more_content_right p{
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--text_color_light_white);
+    margin: 24px 0px 40px 0px;
+}
+.home_content_text button,
+.know_more_content_right button{
+    width: 176px;
+    height: 54px;
+    
+}
+.home_content_img img{
+    width: 100%;
+}
+/* Home section css End here  */
+
+
+/* small logo section css start here  */
+#small_logo .small_logo_content{
+    display: flex;
+    align-items: center;
+}
+
+.small_logo_content .small_logo_left{
+    flex: 3;
+}
+.small_logo_content .small_logo_right{
+    flex: 1;
+}
+.small_logo_left .small_logo_grid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.small_logo_left .small_logo_grid_item img{
+    width: 150px;
+    height: 100px;
+}
+/* small logo section css end here  */
+
+
+/* know more section css code start  */
+#know_more{
+    position: relative;
+    height: 100vh;
+}
+#know_more::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    /* width: 55%;
+    height: 80%; */
+    width: 728px;
+    height: 574px;
+    background: url('./img/know_more.png') no-repeat center / cover;
+    z-index: -1;
+    /* animation: know_more 15s alternate infinite; */
+}
+@keyframes know_more{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(20deg);
+    }
+}
+#know_more .know_more_content{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.know_more_content .know_more_content_right,
+.know_more_content .know_more_content_left{
+    flex: 1;
+}
+
+
+
+/* know more section css code end */
