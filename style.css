@@ -63,6 +63,7 @@ header{
     width: 100%;
     padding: 26px 0px;
     background: var(--Btn_text_color);
+    overflow-x: hidden;
 }
 header nav .nav_content{
     display: flex;
@@ -245,7 +246,8 @@ nav .header_right button{
 /* Features section css code start */
 #feature{}
 #feature .feature_title{
-    width: 600px;
+    max-width: 600px;
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 70px;
 }
