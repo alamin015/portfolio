@@ -287,3 +287,68 @@ nav .header_right button{
     color: var(--text_color_light_white);
 }
 /* Features section css code end */
+
+
+
+/* Business section css code start  */
+#business{
+    position: relative;
+}
+#business::after{
+    position: absolute;
+    content: '';
+    display: block;
+    right: 0;
+    bottom: 0;
+    width: 656px;
+    height: 752px;
+    background: url('./img/business_shape.png') no-repeat center / cover;
+    z-index: -1;
+}
+.business_content{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.business_left,
+.business_right{
+    flex: 1;
+}
+.business_left .left_content h2{
+    font-weight: 600;
+    font-size: 48px;
+    color:var(--Btn_text_color);
+}
+.business_left .left_content p{
+    font-weight: 400;
+    font-size: 20px;
+    margin: 24px 0px;
+    color: var(--text_color_light_white);
+}
+.business_left .left_content .business_plan{
+    display: flex;
+    align-items: center;
+    margin: 0 0 24px 0;
+}
+.left_content .business_plan span{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    line-height: 18px;
+    text-align: center;
+    background: var(--Btn-BG);
+    overflow: hidden;
+    margin-right: 16px;
+}
+.left_content .business_plan span .fa-solid{
+    font-size: 14px;
+    color: var(--Btn_text_color);
+}
+.left_content .business_plan p{
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--text_color_light_white);
+    margin: 0;
+}
+/* Business section css code end  */
