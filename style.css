@@ -25,7 +25,7 @@ body{
     background: var(--body_color);
 }
 section{
-    padding: 40px 0px;
+    padding: 50px 0px;
 }
 .container{
     width: 90%;
@@ -237,3 +237,51 @@ nav .header_right button{
 
 
 /* know more section css code end */
+
+
+
+
+
+/* Features section css code start */
+#feature{}
+#feature .feature_title{
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+#feature .feature_title h2{
+    font-weight: 600;
+    font-size: 48px;
+    color: var(--Btn_text_color);
+    text-align: center;
+}
+.feature_content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-gap: 25px;
+}
+.feature_card_item .feature_card_body{
+    border-radius: 5px;
+    padding: 15px 10px;
+    transition: all 0.3s ease-in-out;
+}
+.feature_card_item .feature_card_body:hover{
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.233);
+}
+
+.feature_card_item .feature_card_body img {
+    width: 90px;
+    height: 80px;
+}
+.feature_card_item .feature_card_body h4 {
+    font-weight: 500;
+    font-size: 32px;
+    color: var(--Btn_text_color);
+    margin: 24px 0px 20px 0px;
+}
+.feature_card_item .feature_card_body p {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--text_color_light_white);
+}
+/* Features section css code end */
