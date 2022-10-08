@@ -199,11 +199,13 @@ nav .header_right button{
 
 
 /* know more section css code start  */
-#know_more{
+#know_more,
+#download{
     position: relative;
     height: 100vh;
 }
-#know_more::before{
+#know_more::before,
+#download::before{
     content: '';
     display: block;
     position: absolute;
@@ -352,3 +354,60 @@ nav .header_right button{
     margin: 0;
 }
 /* Business section css code end  */
+
+
+/* Download section css code start  */
+.download_content{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.download_content .download_content_left{
+    flex: 2;
+}
+.download_content .download_content_left img{
+    width: 400px;
+}
+.download_content .download_content_right{
+    flex: 3;
+}
+.download_content .download_content_right h2{
+    font-weight: 600;
+    font-size: 48px;
+    color: var(--Btn_text_color);
+}
+.download_content .download_content_right p{
+    font-weight: 400;
+    font-size: 20px;
+    margin: 24px 0px 40px 0px;
+    color: var(--text_color_light_white);
+}
+.download_content_right .download_store{
+    display: flex;
+    align-items: center;
+    gap: 38px;
+}
+.download_content_right .download_store .download_store_card{
+    display: flex;
+    align-items: center;
+    padding: 16px 32px;
+    background: var(--Btn-BG);
+    border-radius: 14px;
+}
+.download_content_right .download_store .download_store_card img{
+    width: 35px;
+    height: 37px;
+    margin-right: 14px;
+}
+.download_store_card div h4{
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--Btn_text_color);
+    margin-bottom: 5px;
+}
+.download_store_card div h5{
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--Btn_text_color);
+}
+/* Download section css code end  */
