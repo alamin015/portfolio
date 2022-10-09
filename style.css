@@ -733,6 +733,10 @@ footer .footer_content{
         display: block;
         text-align: center;
     }
+    .get_main_content div input{
+        width: 90%;
+        margin: 0 auto;
+    }
     .get_main_content div button{
         margin-top: 15px;
     }
