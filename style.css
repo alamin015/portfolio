@@ -70,16 +70,19 @@ header nav .nav_content{
     align-items: center;
     justify-content: space-between;
 }
-.nav_content .header_left .logo{
+.nav_content .header_left .logo,
+.footer_item .logo{
     display: flex;
     align-items: center;
 }
-.header_left .logo img{
+.header_left .logo img,
+.footer_item .logo img{
     width: 51px;
     height: 45px;
     margin-right: 8px;
 }
-.header_left .logo h3{
+.header_left .logo h4,
+.footer_item .logo h4{
     font-weight: 600;
     font-size: 16px;
     color: var(--Black_color);
@@ -382,7 +385,8 @@ nav .header_right button{
     margin: 24px 0px 40px 0px;
     color: var(--text_color_light_white);
 }
-.download_content_right .download_store{
+.download_content_right .download_store,
+.footer_item_right .download_store{
     display: flex;
     align-items: center;
     gap: 38px;
@@ -394,20 +398,180 @@ nav .header_right button{
     background: var(--Btn-BG);
     border-radius: 14px;
 }
-.download_content_right .download_store .download_store_card img{
+.download_content_right .download_store .download_store_card img,
+.footer_item_right .download_store .download_store_card img{
     width: 35px;
     height: 37px;
     margin-right: 14px;
 }
-.download_store_card div h4{
+.download_store_card div h4,
+.footer_item_right .download_store_card div h4{
     font-weight: 600;
     font-size: 14px;
     color: var(--Btn_text_color);
     margin-bottom: 5px;
 }
-.download_store_card div h5{
+.download_store_card div h5,
+.footer_item_right .download_store_card h5{
     font-weight: 400;
     font-size: 14px;
     color: var(--Btn_text_color);
 }
 /* Download section css code end  */
+
+
+/* get in touch css code start  */
+#get_in_touch{
+   
+}
+#get_in_touch .container{
+    background: url('./img/get_in_touch.png') no-repeat center / cover;
+}
+#get_in_touch::before{
+    
+}
+
+.get_in_touch_content{
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+.get_in_touch_content .get_main_content{
+    text-align: center;
+}
+.get_main_content h2{
+    font-weight: 600;
+    font-size: 48px;
+    color: var(--Btn_text_color);
+}
+.get_main_content p{
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--text_color_light_white);
+    margin: 16px 0px 30px 0px;
+}
+.get_main_content div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.get_main_content div input{
+    width: 350px;
+    height: 56px;
+    padding: 0px 6px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.7);;
+    border-radius: 6px;
+    margin-right: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--text_color_light_white);
+    outline: none;
+}
+.get_main_content div button{
+    width: 200px;
+    height: 56px;
+
+}
+/* get in touch css code end  */
+
+
+
+/* footer css code start  */
+footer{
+    padding: 40px 0;
+    background: #282637;
+}
+footer .footer_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+.footer_item{
+    flex: 1;
+}
+.footer_item .logo h4{
+    color: var(--Btn_text_color);
+}
+.footer_item_left p{
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--text_color_light_white);
+    margin-top: 14px;
+}
+.footer_item_middle{
+    text-align: center;
+}
+.footer_item_middle span{
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--Btn_text_color);
+    margin-bottom: 24px;
+    display: inline-block;
+    position: relative;
+}
+.footer_item_middle span::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: -65px;
+    top: 50%;
+    width: 63px;
+    height: 2px;
+    background: #fff;
+}
+.footer_item_middle span::after{
+    content: '';
+    display: block;
+    position: absolute;
+    right: -65px;
+    top: 50%;
+    width: 63px;
+    height: 2px;
+    background: #fff;
+}
+.footer_item_middle div a{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background:  #191C28;;
+    display: inline-block;
+    text-align: center;
+    line-height: 44px;
+    color: var(--Btn_text_color);
+    margin-right: 22px;
+    transition: all 0.3s ease-in-out;
+}
+.footer_item_middle div a .fa-brands{
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+}
+.footer_item_middle div a:hover{
+    background: var(--Btn_text_color);
+}
+.footer_item_middle div a:hover .fa-brands{
+    transform: rotate(360deg);
+    color:rgba(0, 0, 0, 1);
+}
+
+.footer_item_right h4{
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--Btn_text_color);
+    margin-bottom: 24px;
+}
+.footer_item_right .download_store .download_store_card{
+    width: 150px;
+    height: 50px;
+    padding: 7px 14px;
+    display: flex;
+    align-items: center;
+    background: var(--Btn-BG);
+    border-radius: 14px;
+}
+/* footer css code end  */
