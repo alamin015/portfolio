@@ -731,6 +731,7 @@ footer .footer_content{
     }
     .get_main_content div{
         display: block;
+        text-align: center;
     }
     .get_main_content div button{
         margin-top: 15px;
@@ -741,7 +742,7 @@ footer .footer_content{
 }
 
 @media (max-width: 480px) {
-    .download_content_right .download_store, .footer_item_right .download_store{
+    .download_content_right .download_store{
         flex-direction: column;
     }
 
