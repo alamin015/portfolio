@@ -206,6 +206,9 @@ nav .header_right button{
 #download{
     position: relative;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #know_more::before,
 #download::before{
@@ -575,3 +578,172 @@ footer .footer_content{
     border-radius: 14px;
 }
 /* footer css code end  */
+
+
+
+/* -----------------responsive css code start 
+-------------------------------------------- */
+@media (max-width: 991px) {
+    #home{
+        padding: 60px 0px 10px 0px;
+        height: 50vh;
+
+    }
+    #home::after{
+        width: 70%;
+        height: 500px;
+    }
+    #home .home_content_text h2,
+    #know_more .know_more_content_right h2,
+    #feature .feature_title h2,
+    .business_left .left_content h2,
+    .download_content .download_content_right h2,
+    .get_main_content h2{
+        font-size: 35px;
+    }
+    #home .home_content_text p,
+    #know_more .know_more_content_right p,
+    .feature_card_body p,
+    .feature_card_item .feature_card_body p,
+    .business_left .left_content p,
+    .left_content .business_plan p,
+    .download_content .download_content_right p,
+    .get_main_content p{
+        font-size: 16px;
+    }
+
+    #small_logo .small_logo_right{
+        display: none;
+    }
+    #know_more{
+        height: 60vh;
+        padding: 20px 0px;
+    }
+    #know_more::before,
+    #download::before{
+    width: 70%;
+    height: 400px;
+    }
+    #feature{
+        padding: 20px 0;
+    }
+    
+    .feature_card_body img{}
+    .feature_card_item .feature_card_body h4{
+        font-size: 25px;
+    }
+    #download{
+        height: 60vh;
+    }
+    .download_content .download_content_left img{
+        width: 100%;
+    }
+    .download_content_right .download_store, .footer_item_right .download_store{
+        flex-direction: column;
+    }
+    .footer_item_middle div a{
+        margin: 0px 18px 18px 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .business_content{
+        display: block;
+    }
+    .business_right{
+        text-align: center;
+    }
+    .business_right img{
+        width: 400px;
+        margin: 0 auto;
+    }
+    
+}
+@media (max-width: 700px){
+    #home,#download{
+        height: auto;
+    }
+    #home::after,
+    #know_more::before,
+    #download::before
+    {
+        width: 0;
+        height: 0;
+    }
+    #home .home_content{
+        display: block;
+    }
+    .home_content_img{
+        text-align: center;
+    }
+    .home_content_img img{
+        width: 90%;
+    }
+    #know_more{
+        height: auto;
+    }
+    #know_more .know_more_content,
+    .download_content{
+        display: block;
+    }
+    .know_more_content_left{
+        text-align: center;
+    }
+    .know_more_content_left img{
+        width: 80%;
+    }
+    .download_content_left{
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .download_content_right .download_store, .footer_item_right .download_store{
+        flex-direction: row;
+    }
+    footer .footer_content{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+        grid-gap: 15px;
+    }
+    .footer_item_right .download_store .download_store_card{
+        width: 160px;
+        height: 60px;
+    }
+    .footer_item_right .download_store .download_store_card img{
+        width: 25px;
+        height: 25px;
+    }
+    .footer_item_right .download_store_card h5{
+        font-size: 12px;
+    }
+    
+    .footer_item_right .download_store_card div h4{
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+}
+
+@media (max-width : 570px) {
+    .download_content_left{
+        display: none;
+    }
+    .get_main_content div{
+        display: block;
+    }
+    .get_main_content div button{
+        margin-top: 15px;
+    }
+    section{
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .download_content_right .download_store, .footer_item_right .download_store{
+        flex-direction: column;
+    }
+
+    
+}
