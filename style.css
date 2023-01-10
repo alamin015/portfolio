@@ -122,21 +122,13 @@ nav .header_right button{
 #home{
     padding: 60px 0px;
     position: relative;
-    height: 100vh;
+    height: 90vh;
+    background: url('./img/homeBG.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: contain;
 }
-#home::after{
-    content: '';
-    display: block;
-    position: absolute;
-    right: -100px;
-    top: -100px;
-    /* width: 50%;
-    height: 90%; */
-    width: 879px;
-    height: 700px;
-    background: url('./img/homeBG.png') no-repeat center center / cover;
-    z-index: -1;
-}
+
 #home .home_content{
     display: flex;
     align-items: center;
@@ -205,34 +197,17 @@ nav .header_right button{
 #know_more,
 #download{
     position: relative;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: url('./img/know_more.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: contain;
+
 }
-#know_more::before,
-#download::before{
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0px;
-    /* width: 55%;
-    height: 80%; */
-    width: 728px;
-    height: 574px;
-    background: url('./img/know_more.png') no-repeat center / cover;
-    z-index: -1;
-    /* animation: know_more 15s alternate infinite; */
-}
-@keyframes know_more{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(20deg);
-    }
-}
+
 #know_more .know_more_content{
     display: flex;
     align-items: center;
@@ -301,18 +276,13 @@ nav .header_right button{
 /* Business section css code start  */
 #business{
     position: relative;
+    background: url('./img/business_shape.png');
+    background-repeat: no-repeat;
+    background-position:  right bottom;
+    background-size: contain;
+
 }
-#business::after{
-    position: absolute;
-    content: '';
-    display: block;
-    right: 0;
-    bottom: 0;
-    width: 656px;
-    height: 752px;
-    background: url('./img/business_shape.png') no-repeat center / cover;
-    z-index: -1;
-}
+
 .business_content{
     display: flex;
     align-items: center;
@@ -428,11 +398,13 @@ nav .header_right button{
    
 }
 #get_in_touch .container{
-    background: url('./img/get_in_touch.png') no-repeat center / cover;
+    /* background: url('./img/get_in_touch.png') no-repeat left top / contain; */
+    background: url('./img/get_in_touch.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-#get_in_touch::before{
-    
-}
+
 
 .get_in_touch_content{
     max-width: 700px;
